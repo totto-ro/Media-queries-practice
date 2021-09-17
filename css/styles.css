@@ -6,9 +6,108 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    background-color:lightblue;
   }
   
   .logo > img {
     width: 50px;
   }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .logo > img{
+    width: 70px;
+    border-radius: 100px;
+  }
+
+  .navbar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  .hamburger{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight:900;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    display: none;
+  }
+
+  .product{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px;
+    height: 100px;
+  }
+
+  .social_icon{
+    width: 500px;
+    padding: 20px;
+  }
+
   
+  @media only screen and (min-width: 481px) and (max-width: 1023px){
+    body {
+      background-color: rgb(255, 225, 241);
+    }
+  }
+
+  @media only screen and (min-width: 1024px){
+    body {
+      background-color:cornsilk;
+    }
+    .hamburger{
+      visibility: hidden;
+    }
+
+    .menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style: none;
+      color: white;
+      margin: 15px;
+      font-size: 25px;
+      width: 500px;
+    }
+
+    main{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 15px;
+    }
+
+    .product{
+      flex: 1;
+      margin: 30px;
+    }
+
+    
+
+  }
