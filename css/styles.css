@@ -108,6 +108,19 @@
       margin: 30px;
     }
 
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+
+    .logo{
+      margin-right: 50px;
+    }
+
+
     
 
   }
